@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { data: session, isPending } = useSession();
-    console.log(session);
+    // console.log(session);
     const user = session?.user;
     const router = useRouter();
 
@@ -31,7 +31,7 @@ export default function Navbar() {
     const navLinks = [
         { label: "Browse Jobs", href: "/jobs" },
         { label: "Company", href: "/company" },
-        { label: "Pricing", href: "/pricing" },
+        { label: "Pricing", href: "/plans" },
     ];
 
     return (
